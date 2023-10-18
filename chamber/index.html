@@ -14,14 +14,24 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="icon" href="images/fork.ico">
-    <title>Document</title>
+    <title>Chamber Site </title>
 </head>
 
 <body>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#weather">Weather</a></li>
+            <li><a href="#spotlights">Company Spotlights</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section class="hero">
+        <section class="hero" id="home">
             <!-- Placeholder for hero image -->
-            <img src="images/hero.jpg" alt="Hero Image">
+            <img src="images/satelite-hero.jpg" alt="Hero Image">
         </section>
 
         <section class="call-to-action">
@@ -29,7 +39,7 @@
             <a href="/join">Descover More </a>
         </section>
 
-        <section class="current-events">
+        <section class="current-events" id="events">
             <!-- Placeholder for current events -->
             <h2>Current Events</h2>
             <ul>
@@ -39,25 +49,25 @@
             </ul>
         </section>
 
-        <section class="weather-card">
+        <section class="weather-card" id="weather">
             <!-- Placeholder for weather card -->
             <h2>Weather</h2>
             <p>Current weather conditions</p>
         </section>
 
-        <section class="company-spotlights">
+        <section class="company-spotlights" id="spotlights">
             <!-- Placeholder for company spotlights -->
             <h1>Company Spotlights</h1>
             <div class="spotlight">
-                <img src="images/sushi.jpeg" alt="Spotlight 1">
+                <img src="images/zon1.png" alt="Spotlight 1">
                 <p>Company 1 - Description</p>
             </div>
             <div class="spotlight">
-                <img src="images/hamburger.jpg" alt="Spotlight 2">
+                <img src="images/zon2.jpeg" alt="Spotlight 2">
                 <p>Company 2 - Description</p>
             </div>
             <div class="spotlight">
-                <img src="images/steak.jpeg" alt="Spotlight 3">
+                <img src="images/zan3.png" alt="Spotlight 3">
                 <p>Company 3 - Description</p>
             </div>
         </section>
@@ -78,7 +88,7 @@
             <p>Last Modified: <span id="lastModified"></span></p>
         </section>
     </footer>
-
+    <script src="script/chamber.js"></script>
 
 </body>
 
