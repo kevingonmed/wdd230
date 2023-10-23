@@ -46,7 +46,28 @@ header h1 {
 }
 
 
+/* Hero Image */
+.hero {
+    position: relative;
+}
 
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2vw;
+}
 
 
 main h2 {
