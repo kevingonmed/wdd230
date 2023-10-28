@@ -49,32 +49,13 @@ main {
     padding: 20px;
 }
 
-.hero img {
-    max-width: 100%;
-    height: auto;
-    max-height: 800px;
-}
-
-.call-to-action {
-    text-align: center;
+.hero {
     position: relative;
-    /* Change to relative for proper centering */
-    background-color: rgba(0, 115, 230, 0.8);
-    /* Background color with opacity */
-    padding: 20px;
-    border-radius: 5px;
-    color: #fff;
+    text-align: center;
+    /* Center the content horizontally */
 }
 
-.call-to-action a {
-    display: inline-block;
-    background-color: #0073e6;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
+
 
 .current-events ul {
     list-style-type: none;
@@ -151,9 +132,6 @@ footer {
     }
 }
 
-/* ... (your existing CSS) */
-
-/* Center the main content */
 main {
     display: flex;
     flex-direction: column;
