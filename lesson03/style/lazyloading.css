@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    background-color: #000;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 100px;
+
+}
