@@ -37,3 +37,31 @@ modeButton.addEventListener("click", () => {
         modeButton.textContent = "🕶️";
     }
 });
+
+//discover
+document.addEventListener('DOMContentLoaded', () => {
+    const message = document.querySelector('.message');
+    const numVisits = Number(localStorage.getItem("numVisits-ls")) || 0;
+    const lastVisit = localStorage.getItem("lastVisit-ls");
+    const currentTimestamp = Date.now();
+    const oneDayInMillis = 24 * 60 * 60 * 1000; // One day in milliseconds
+
+    if (numVisits === 0) {
+        message.textContent = "Welcome! Let us know if you have any questions.";
+    } else {
+        const daysSinceLastVisit = Math.floor((currentTimestamp - Number(lastVisit)) / oneDayInMillis);
+
+        if (daysSinceLastVisit === 0) {
+            message.textContent = "Back so soon! Awesome!";
+        } else {
+            const plural = daysSinceLastVisit === 1 ? '' : 's';
+            message.textContent = `You last visited ${daysSinceLastVisit} day${plural} ago.`;
+        }
+    }
+
+    // Update the last visit timestamp
+    localStorage.setItem("lastVisit-ls", currentTimestamp);
+
+    // Increment the number of visits
+    localStorage.setItem("numVisits-ls", numVisits + 1);
+});

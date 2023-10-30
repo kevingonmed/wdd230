@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Kevin Gonzalez">
+    <meta name="description"
+        content="Official website of Satelite Chamber of Commerce, providing information about local businesses and events.">
+    <meta property="og:title" content="Chamber of Commerce Satelite">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://media-cdn.tripadvisor.com/media/photo-s/1d/86/52/85/lomas-verdes.jpg">
+    <meta property="og:url" content="https://kevingonmed.github.io/wdd230/">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="icon" href="images/fork.ico">
+    <title>Chamber Site </title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#weather">Weather</a></li>
+                <li><a href="#spotlights">Company Spotlights</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="mode">🕶️</div>
+
+    <main class="grid-container">
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <div class="square">
+                    <!-- Display message about the time between visits here -->
+                    <h3>Information</h3>
+                    <!-- Placeholder information -->
+                    <p>Date message: <span class="message"></span></p>
+                </div>
+                <!-- Other sidebar content goes here -->
+                <section class="square">
+                    <h3>Porpose </h3>
+                    <!-- Placeholder information -->
+                    <img src="images/satelite-hero.jpg" alt="Pourpose" width="400" height="400">
+                    <p>Official website of Satelite Chamber of Commerce, providing information about local businesses
+                        and events.</p>
+                </section>
+                <section class="square">
+                    <h3>Events </h3>
+                    <!-- Placeholder information -->
+                    <h4>January 12 </h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolor magni eum sequi aspernatur
+                        modi nostrum qui neque architecto eaque cum velit, distinctio a voluptatibus voluptate
+                        consequuntur sapiente recusandae esse.</p>
+                    <h4>December 13</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint nulla ex consequatur, id
+                        distinctio minima officiis quod iste cumque neque, fugit voluptatem minus, delectus eaque earum
+                        magni. Nihil, sapiente cum.</p>
+                    <h4>January 10</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quasi iure perspiciatis iusto
+                        delectus alias, assumenda provident rem minima minus ipsum officia velit quae recusandae
+                        repellendus enim magni dolor temporibus!</p>
+                </section>
+                <section class="square">
+                    <h3>Calendar</h3>
+                    <!-- Placeholder information -->
+                    <p>January 12 </p>
+                    <p>December 13</p>
+                    <p>January 10</p>
+                </section>
+            </div>
+        </aside>
+        <section class="gallery">
+            <picture>
+                <img src="images/dis1.webp" alt="image 1" loading="lazy" width="400" height="250">
+            </picture>
+            <picture>
+                <img src="images/dis2.webp" alt="image 2" loading="lazy" width="400" height="400">
+            </picture>
+            <picture>
+                <img src="images/dis3.webp" alt="image 3" loading="lazy" width="400" height="400">
+            </picture>
+            <picture>
+                <img src="images/dis4.webp" alt="image 4" loading="lazy" width="400" height="250">
+            </picture>
+            <picture>
+                <img src="images/dis5.webp" alt="image 5" loading="lazy" width="400" height="600">
+            </picture>
+            <picture>
+                <img src="images/zon1.png" alt="image 6" loading="lazy" width="400" height="600">
+            </picture>
+            <!-- Repeat for other images -->
+        </section>
+    </main>
+    <footer>
+        <section class="contact-info">
+            <!-- Contact information -->
+            <h2>Contact Us</h2>
+            <p>Email: contact@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </section>
+
+        <section class="development-info">
+            <!-- Development information -->
+            <p>Kevin Gonzalez</p>
+            <p>WDD 230 Project</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </section>
+    </footer>
+    <script src="script/chamber.js"></script>
+
+
+</body>
+
+</html>

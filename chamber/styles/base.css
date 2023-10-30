@@ -214,3 +214,77 @@ nav {
     color: gold;
     /* Change link color on hover */
 }
+
+/*discover css*/
+/* Your existing CSS rules */
+
+/* CSS for the grid layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Sidebar and Gallery */
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    /*position: sticky;
+    top: 0;
+    /* Stick the sidebar content to the top */
+}
+
+.sidebar-content {}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 50px;
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+figure {
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* CSS for hover effect on images */
+figure:hover figcaption {
+    opacity: 1;
+}
+
+.square {
+    background-color: #6096ba;
+    /* Background color for the square */
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    /* Spacing between squares */
+}
+
+.gallery picture:hover img {
+    transform: scale(1.1);
+    /* Scale up the image on hover */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    /* Change the cursor to a pointer on hover */
+    box-shadow: 0 0 10px #6096ba;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* Single column layout for smaller screens */
+    }
+}
