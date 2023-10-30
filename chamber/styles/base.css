@@ -219,6 +219,14 @@ nav {
 /* Your existing CSS rules */
 
 /* CSS for the grid layout */
+h1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+
+    /* Optional, for horizontal centering */
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
