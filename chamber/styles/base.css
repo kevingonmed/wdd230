@@ -21,27 +21,6 @@ a {
     color: #0073e6;
 }
 
-/* Navigation Bar Styles */
-nav {
-    background-color: #333;
-    padding: 10px 0;
-}
-
-.navigation {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-.navigation li {
-    margin: 0 20px;
-}
-
-.navigation a {
-    text-decoration: none;
-    color: #fff;
-}
-
 /* Main Content Styles */
 main {
     max-width: 1200px;
@@ -179,58 +158,97 @@ main {
     cursor: pointer;
 }
 
-/* Increase the size of the navbar and change link styles on hover */
+/* Mobile View ***************/
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: #eee;
+    color: #000;
+}
+
+#menu::before {
+    content: "≡";
+}
 
 nav {
-    background-color: #333;
-    /* Background color of the navbar */
-    padding: 20px;
-    /* Increase the top and bottom padding to make it bigger */
+    background-color: #e7ecef;
 }
 
 .navigation {
-    display: flex;
-    flex-direction: row;
-    /* Display the links horizontally */
     list-style: none;
-    justify-content: center;
-    /* Center the links horizontally */
+    margin: 0 auto;
+    max-width: 760px;
 }
 
 .navigation li {
-    margin: 0 80px;
-    /* Add space between links */
+    display: none;
 }
 
-.navigation li a {
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.2s;
-    /* Smooth color transition on hover */
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
-.navigation li a:hover {
-    color: gold;
-    /* Change link color on hover */
+.navigation a:hover,
+navigation a:active {
+    color: white;
+    background-color: black;
 }
 
-/*discover css*/
-/* Your existing CSS rules */
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.*/
+@media only screen and (min-width: 40em) {
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        /* change state in small view */
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+}
+
+/*discover css
+
 
 /* CSS for the grid layout */
-h1 {
+/*h1 {
     position: absolute;
     top: 20%;
     left: 20%;
 
-    /* Optional, for horizontal centering */
+    /* Optional, for horizontal centering 
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* Sidebar and Gallery */
+    /* Sidebar and Gallery 
     gap: 20px;
     padding: 20px;
 }
@@ -241,7 +259,7 @@ h1 {
     border-radius: 5px;
     /*position: sticky;
     top: 0;
-    /* Stick the sidebar content to the top */
+    /* Stick the sidebar content to the top 
 }
 
 .sidebar-content {}
@@ -266,33 +284,33 @@ img {
     border-radius: 5px;
 }
 
-/* CSS for hover effect on images */
+/* CSS for hover effect on images 
 figure:hover figcaption {
     opacity: 1;
 }
 
 .square {
     background-color: #6096ba;
-    /* Background color for the square */
+    /* Background color for the square 
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
-    /* Spacing between squares */
+    /* Spacing between squares 
 }
 
 .gallery picture:hover img {
     transform: scale(1.1);
-    /* Scale up the image on hover */
+    /* Scale up the image on hover 
     transition: transform 0.3s ease;
     cursor: pointer;
-    /* Change the cursor to a pointer on hover */
+    /* Change the cursor to a pointer on hover 
     box-shadow: 0 0 10px #6096ba;
 }
 
-/* Media query for smaller screens */
+/* Media query for smaller screens 
 @media (max-width: 767px) {
     .grid-container {
         grid-template-columns: 1fr;
-        /* Single column layout for smaller screens */
+        /* Single column layout for smaller screens 
     }
 }
