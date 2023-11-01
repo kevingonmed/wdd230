@@ -237,19 +237,19 @@ navigation a:active {
 
 
 /* CSS for the grid layout */
-/*h1 {
+h1 {
     position: absolute;
     top: 20%;
     left: 20%;
 
-    /* Optional, for horizontal centering 
+    Optional,
+    for horizontal centering
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* Sidebar and Gallery 
-    gap: 20px;
+    Sidebar and Gallery gap: 20px;
     padding: 20px;
 }
 
@@ -257,9 +257,9 @@ navigation a:active {
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 5px;
-    /*position: sticky;
+    position: sticky;
     top: 0;
-    /* Stick the sidebar content to the top 
+    /*Stick the sidebar content to the top*/
 }
 
 .sidebar-content {}
@@ -284,33 +284,33 @@ img {
     border-radius: 5px;
 }
 
-/* CSS for hover effect on images 
+/* CSS for hover effect on images*/
 figure:hover figcaption {
     opacity: 1;
 }
 
 .square {
     background-color: #6096ba;
-    /* Background color for the square 
+    /* Background color for the square*/
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
-    /* Spacing between squares 
+    /* Spacing between squares */
 }
 
 .gallery picture:hover img {
     transform: scale(1.1);
-    /* Scale up the image on hover 
+    /* Scale up the image on hover*/
     transition: transform 0.3s ease;
     cursor: pointer;
-    /* Change the cursor to a pointer on hover 
+    /* Change the cursor to a pointer on hover */
     box-shadow: 0 0 10px #6096ba;
 }
 
-/* Media query for smaller screens 
+/* Media query for smaller screens */
 @media (max-width: 767px) {
     .grid-container {
         grid-template-columns: 1fr;
-        /* Single column layout for smaller screens 
+        /* Single column layout for smaller screens */
     }
 }
