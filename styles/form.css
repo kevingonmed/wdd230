@@ -1,0 +1,195 @@
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+
+header {
+    background-color: gold;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: 3px 7px 6px;
+    background-color: #eee;
+    color: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation li a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+}
+
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    iframe {
+        height: 300px;
+        /* Adjust the height for even smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    iframe {
+        height: 200px;
+    }
+}
+
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="range"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* :root pseudo-class CSS variables */
+:root {
+    --main-bg-color: #f4f4f4;
+    --form-bg-color: #fff;
+    --label-color: #333;
+}
+
+/* Styling based on :root variables */
+body {
+    background-color: var(--main-bg-color);
+}
+
+form {
+    background-color: var(--form-bg-color);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+label {
+    color: var(--label-color);
+}
+
+/* Range input display */
+input[type="range"]+output {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center
+}

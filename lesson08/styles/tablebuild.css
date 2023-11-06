@@ -1,0 +1,36 @@
+/* General table styles */
+table {
+    /*width: 100%;*/
+    margin: 50px auto;
+    border-collapse: collapse;
+}
+
+caption {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+thead th {
+    background-color: #D203A0;
+    color: #fff;
+    padding: 10px;
+}
+
+td,
+th {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Zebra striping */
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+    /* Even rows background color */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e5e5e5;
+    /* Odd rows background color */
+}
