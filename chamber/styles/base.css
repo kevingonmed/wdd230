@@ -314,3 +314,70 @@ figure:hover figcaption {
         /* Single column layout for smaller screens */
     }
 }
+
+/* Form*/
+
+/* Styles for form container */
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style form labels for clarity */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Style form input fields */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Style the submit button */
+form button {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 767px) {
+    form {
+        padding: 10px;
+    }
+}
+
+/* Style for the Thank You Message */
+.thankyou-message {
+    text-align: center;
+    padding: 20px;
+}
+
+.thankyou-message h1 {
+    font-size: 2rem;
+    /* Larger font size for the heading */
+    text-align: center;
+    padding: 20px;
+
+}
+
+.thankyou-message p {
+    font-size: 1.2rem;
+    /* Font size for the paragraph */
+
+}

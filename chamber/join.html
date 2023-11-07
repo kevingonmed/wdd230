@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Kevin Gonzalez">
+    <meta name="description"
+        content="Official website of Satelite Chamber of Commerce, providing information about local businesses and events.">
+    <meta property="og:title" content="Chamber of Commerce Satelite">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://media-cdn.tripadvisor.com/media/photo-s/1d/86/52/85/lomas-verdes.jpg">
+    <meta property="og:url" content="https://kevingonmed.github.io/wdd230/">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="icon" href="images/fork.ico">
+    <title>Discover Chamber of Commerce Satelite </title>
+</head>
+
+<body>
+    <header>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Weather</a></li>
+                <li><a href="#">Company Spotlights</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="mode">🕶️</div>
+
+    <main>
+        <form action="thankyou.html" method="get">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="title">Title or Position (min 7 characters, alpha-numeric, hyphens, and spaces):</label>
+            <input type="text" id="title" name="title" required pattern="^[a-zA-Z0-9-\s]{7,}$">
+
+            <label for="email">Email (BYUI domain):</label>
+            <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                title="Please enter a valid email address">
+
+            <label for="phone">Mobile Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="organization">Business/Organization Name:</label>
+            <input type="text" id="organization" name="organization" required>
+
+            <label for="membershipLevel">Membership Level:</label>
+            <select id="membershipLevel" name="membershipLevel">
+                <option value="NP">NP Membership (non-profit, no fee)</option>
+                <option value="Bronze">Bronze Membership</option>
+                <option value="Silver">Silver Membership</option>
+                <option value="Gold">Gold Membership</option>
+            </select>
+
+            <label for="description">Business/Organization Description:</label>
+            <textarea id="description" name="description"></textarea>
+
+            <input type="hidden" id="timestamp" name="timestamp">
+
+            <button type="submit">Submit Form</button>
+        </form>
+    </main>
+
+    <footer>
+        <section class="contact-info">
+            <!-- Contact information -->
+            <h2>Contact Us</h2>
+            <p>Email: contact@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </section>
+
+        <section class="development-info">
+            <!-- Development information -->
+            <p>Kevin Gonzalez</p>
+            <p>WDD 230 Project</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </section>
+    </footer>
+    <script src="script/chamber.js"></script>
+    <script src="script/windchill.js"></script>
+
+</body>
+
+</html>
