@@ -1,6 +1,39 @@
+/* Reset CSS for consistent styling */
+body,
+h1,
+h2,
+ul,
+p,
+input,
+select,
+textarea {
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    max-width: 400px;
+    /* Adjust the max width according to your design */
+    margin: 0 auto;
+    /* Center the form */
+    padding: 20px;
+    background-color: var(--form-bg-color);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--main-bg-color);
+    color: #333;
+}
+
+/* Header Styles */
 header {
     text-align: center;
     padding: 20px 0;
+    background-color: gold;
 }
 
 header img {
@@ -14,6 +47,7 @@ header h1 {
     margin-top: 10px;
 }
 
+/* Navigation Styles */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -31,11 +65,7 @@ nav a {
     font-weight: bold;
 }
 
-
-header {
-    background-color: gold;
-}
-
+/* Mobile Menu Styles */
 #menu {
     font-size: 1.5rem;
     border: 1px solid rgba(0, 0, 0, .3);
@@ -81,21 +111,11 @@ header {
     font-weight: 700;
 }
 
-/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
-.open li {
-    display: block;
-    width: 100%;
-}
-
-.open li a {
-    display: block;
-}
-
-/* large view navigation ************************************/
+/* Large View Navigation Styles */
 @media (min-width: 37.5em) {
     #menu {
         display: none;
-        /* hide hamburger button */
+        /* Hide the hamburger button */
     }
 
     .navigation {
@@ -106,25 +126,9 @@ header {
         display: block;
         flex: 1 1 100%;
     }
-
-    iframe {
-        height: 300px;
-        /* Adjust the height for even smaller screens */
-    }
 }
 
-@media (max-width: 480px) {
-    iframe {
-        height: 200px;
-    }
-}
-
-
-/* General styling */
-body {
-    font-family: Arial, sans-serif;
-}
-
+/* Form Styles */
 .form-group {
     margin-bottom: 20px;
 }
@@ -157,39 +161,16 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* :root pseudo-class CSS variables */
-:root {
-    --main-bg-color: #f4f4f4;
-    --form-bg-color: #fff;
-    --label-color: #333;
-}
-
-/* Styling based on :root variables */
-body {
-    background-color: var(--main-bg-color);
-}
-
-form {
-    background-color: var(--form-bg-color);
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-label {
-    color: var(--label-color);
-}
-
-/* Range input display */
+/* Range Input Display */
 input[type="range"]+output {
     display: inline-block;
     margin-left: 10px;
     font-weight: bold;
 }
 
-
+/* Footer Styles */
 footer {
     background-color: #333;
     color: #fff;
-    text-align: center
+    text-align: center;
 }

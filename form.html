@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <img src="images/porfile-convert.webp" alt="porfile image">
+        <img src="images/porfile-convert.webp" alt="profile image">
         <h1>Kevin Gonzalez</h1>
     </header>
     <nav>
@@ -29,51 +29,61 @@
             <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
         </ul>
     </nav>
-
     <main>
-        <form id="myForm" method="get" action="record.html">
-            <h2>Form Example</h2>
-
-            <!-- Username -->
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-
-            <!-- Password -->
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{8,}">
-            </div>
-
-            <!-- Password Confirmation -->
-            <div class="form-group">
-                <label for="passwordConfirm">Confirm Password</label>
-                <input type="password" id="passwordConfirm" name="passwordConfirm" required>
-            </div>
-
-            <!-- Email -->
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
-                    title="Please enter a valid email address">
-            </div>
-
-            <!-- Page Rating -->
-            <div class="form-group">
-                <label for="pageRating">Page Rating</label>
-                <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1">
-                <output for="pageRating"></output>
-            </div>
-
-            <!-- Submit Button -->
-            <button type="submit">Submit</button>
-        </form>
+        <div class="form-container">
+            <form id="myForm" method="get" action="record.html">
+                <h2>Form Example</h2>
+                <!-- Username -->
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <!-- Password -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{8,}"
+                        placeholder="At least 8 alphanumeric characters">
+                </div>
+                <!-- Password Confirmation -->
+                <div class="form-group">
+                    <label for="passwordConfirm">Confirm Password</label>
+                    <input type="password" id="passwordConfirm" name="passwordConfirm" required>
+                    <span id="passwordMismatch" style="color: red;"></span>
+                </div>
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                        title="Please enter a valid email address">
+                </div>
+                <!-- Page Rating -->
+                <div class="form-group">
+                    <label for="pageRating">Page Rating</label>
+                    <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1">
+                    <output for="pageRating"></output>
+                </div>
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </main>
     <footer>
         <p>&copy; <span id="currentYear">YYYY</span> Kevin Gonzalez Mexico</p>
         <p id="lastModified"></p>
     </footer>
+    <script>
+        document.getElementById("passwordConfirm").addEventListener("input", function () {
+            let password = document.getElementById("password").value;
+            let confirmPassword = this.value;
+
+            if (password === confirmPassword) {
+                document.getElementById("passwordMismatch").textContent = "";
+            } else {
+                document.getElementById("passwordMismatch").textContent = "Passwords do not match";
+            }
+        });
+    </script>
+
 </body>
 
 </html>
