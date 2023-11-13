@@ -1,12 +1,19 @@
 const baseURL = "https://kevingonmed.github.io/wdd230/";
 const linksURL = "https://kevingonmed.github.io/wdd230/data/links.json";
+
 async function getLinks() {
-    const response = await fetch(linksURL);
-    const data = await response.json();
-    console.log(data);
+    try {
+        const response = await fetch(linksURL);
+        const data = await response.json();
+        console.log(data);
+        displayLinks(data);
+    } catch (error) {
+        console.error("Error fetching links data:", error);
+    }
 }
 
 getLinks();
+
 function displayLinks(weeks) {
     const linksContainer = document.getElementById("activity-links"); // Adjust the ID as needed
 
@@ -20,7 +27,7 @@ function displayLinks(weeks) {
         // Create a link for each lesson
         links.forEach((link) => {
             const anchor = document.createElement("a");
-            anchor.href = `${baseURL}${link.url}`;
+            anchor.href = `${link.url}`;
             anchor.textContent = link.title;
 
             listItem.appendChild(anchor);
