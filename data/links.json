@@ -1,0 +1,103 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "https://kevingonmed.github.io/wdd230/lesson01/media-query.html",
+                    "title": "Media Query"
+                }
+                // Add more links as needed
+            ]
+        },
+        // Add data for lessons 2 through 10 in a similar format
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "https://kevingonmed.github.io/wdd230/lesson02/design.html",
+                    "title": "Design"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "https://codepen.io/kevingonmed/pen/JjwZPWq",
+                    "title": "Media Query"
+                },
+                {
+                    "url": "https://codepen.io/kevingonmed/pen/RwEJbOK?editors=0100",
+                    "title": "Media Query"
+                },
+                {
+                    "url": "https://kevingonmed.github.io/wdd230/chamber/chamber-site-plan.html",
+                    "title": "Media Query"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://kevingonmed.github.io/wdd230/lesson01/media-query.html",
+                    "title": "#"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "https://kevingonmed.github.io/wdd230/lesson05/bom.html",
+                    "title": "BOM"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "https://kevingonmed.github.io/wdd230/lesson03/images/landscape.webp",
+                    "title": "WebP"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "https://kevingonmed.github.io/wdd230/lessoon06/responsive-images.html",
+                    "title": "Responsive"
+                },
+                {
+                    "url": "https://kevingonmed.github.io/wdd230/lesson03/lazyloading.html",
+                    "title": "LazyLoading"
+                },
+                {
+                    "url": "https://kevingonmed.github.io/wdd230/lesson07/bom.html",
+                    "title": "JS Localstorage"
+                },
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "https://kevingonmed.github.io/wdd230/lesson08/tablebuild.html",
+                    "title": "Table"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "https://kevingonmed.github.io/wdd230/lesson05/bom.html",
+                    "title": "JSON"
+                }
+            ]
+        }
+    ]
+}
