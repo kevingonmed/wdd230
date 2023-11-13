@@ -1,13 +1,9 @@
 const baseURL = "https://kevingonmed.github.io/wdd230/";
 const linksURL = "https://kevingonmed.github.io/wdd230/data/links.json";
 async function getLinks() {
-    try {
-        const response = await fetch(linksURL);
-        const data = await response.json();
-        displayLinks(data);
-    } catch (error) {
-        console.error("Error fetching links data:", error);
-    }
+    const response = await fetch(linksURL);
+    const data = await response.json();
+    console.log(data);
 }
 
 getLinks();
