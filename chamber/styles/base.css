@@ -262,7 +262,7 @@ h1 {
     /*Stick the sidebar content to the top*/
 }
 
-.sidebar-content {}
+
 
 .gallery {
     display: grid;
@@ -380,4 +380,51 @@ form button {
     font-size: 1.2rem;
     /* Font size for the paragraph */
 
+}
+
+/*directory
+/* Add your styles for members here */
+#members-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.member-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.member-info {
+    text-align: center;
+}
+
+.list-item {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Styles for grid view */
+.grid-view #members-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Styles for list view */
+.list-view #members-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-view .member-card,
+.list-view .list-item {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
 }

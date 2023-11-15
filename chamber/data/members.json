@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "ZAAR",
+            "address": "Circuito Médicos Número 6, Piso P.H., Fraccionamiento Ciudad Satélite ",
+            "phone": "525521554960",
+            "website": "http://zaarap.com.mx/",
+            "image": "https://scontent.fmex36-1.fna.fbcdn.net/v/t39.30808-1/294583588_533883921861616_4496046366564979511_n.jpg?stp=c9.0.80.80a_cp0_dst-jpg_p80x80&_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=oxgWcoHJv4cAX8n0UK0&_nc_ht=scontent.fmex36-1.fna&edm=AOf6bZoEAAAA&oh=00_AfDkJiCO37Ig8c2EFZuA6Ipn-HAhlmKsXH-BtcnTEVnGmg&oe=6559FCF3",
+            "membershipLevel": "Gold",
+            "description": "We are a company that recovers, manages and markets expired portfolio, coming from institutions"
+        },
+        {
+            "name": "BYB SERVICIOS EMPRESARIALES",
+            "address": "Blvd. Manuel Avila Camacho 1903",
+            "phone": "525589954811",
+            "website": "https://bybservicios.com/",
+            "image": "https://scontent.fmex5-1.fna.fbcdn.net/v/t39.30808-1/292170864_406364051511286_3489142409418553282_n.jpg?stp=c321.455.1391.1391a_dst-jpg_s320x320&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=7rOPEHaJnMIAX-YTy7t&_nc_ht=scontent.fmex5-1.fna&edm=AOf6bZoEAAAA&oh=00_AfAoDuznHyjxq576xOn14lAFa_x3EoKBN_nr5uLICyqgvA&oe=655936C5",
+            "membershipLevel": "Silver",
+            "otherInfo": "We support entrepreneurs to form good teams that operate, sell or manage their companies. Since 2007 we have supported more than 500 companies to achieve their objectives with business solutions of the highest quality and trust."
+        },
+        {
+            "name": "SICFIX",
+            "address": "Circuito Geógrafos 70 Estado de México",
+            "phone": "525559876955",
+            "website": "https://sicfix.mx/",
+            "image": "https://scontent.fmex31-1.fna.fbcdn.net/v/t39.30808-1/258844812_431053141981568_4318236855753151491_n.png?stp=dst-png_p320x320&_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=KtCYdfTgfaoAX_DTFDc&_nc_ht=scontent.fmex31-1.fna&edm=AOf6bZoEAAAA&oh=00_AfAKu0eqTAhkZlqQPrUT5qkl9qox2SSx7MiUa0grUhwh5A&oe=6559552C",
+            "membershipLevel": "Silver",
+            "otherInfo": "Repair of laptops, PCs and Servers. We have certified technicians and the best technology"
+        },
+        {
+            "name": "KAITZEN CONSULTORES",
+            "address": "Boulevard Manuel Avila Camacho 1903-402 Cd. Satélite, Naucalpan Estado de México",
+            "phone": "5253935078",
+            "website": "https://www.kaitzenconsultores.com/",
+            "image": "https://scontent.fmex26-1.fna.fbcdn.net/v/t39.30808-1/302475416_455394623301391_8477882958374561659_n.png?stp=dst-png_p320x320&_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=PgCuCSiIwgMAX_l_O98&_nc_oc=AQn3OsSu7FNUUFiWN8YIKOMyjtzBG8nuOS4fC9HWoyu7qLrLu_uwbfTwU4Tbh0cJikzcrQ7xeaPyOZaueD2bIMea&_nc_ht=scontent.fmex26-1.fna&edm=AOf6bZoEAAAA&oh=00_AfCoPhuoBI4pEmT7Rkp0sAErMdMEEZZs_27dXnz9z4Yh7g&oe=6558D5FF",
+            "membershipLevel": "Silver",
+            "otherInfo": "We are a company with more than 10 years of experience in Consulting and Implementation of solutions"
+        },
+        {
+            "name": "GABRIELLA MATTAR PSICOTERAPEUTA",
+            "address": "Circunvalación Poniente 22",
+            "phone": "525569872034",
+            "website": "https://www.gabriellamattar.com/",
+            "image": "https://scontent.fmex31-1.fna.fbcdn.net/v/t39.30808-1/275124064_5259495530741870_5807318647995766337_n.jpg?stp=dst-jpg_s320x320&_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=T_USiuPVdDoAX8_lGb9&_nc_ht=scontent.fmex31-1.fna&edm=AOf6bZoEAAAA&oh=00_AfA_bRefCcOXnVnXAkXd4nP7mjzyw7WtGpAzOECrgEvngw&oe=6559397E",
+            "membershipLevel": "Silver",
+            "otherInfo": "Mental health is a pillar for comprehensive health. Mrs. Gabriella Mattar Carbia The solutions to problems are found in our own being"
+        },
+        {
+            "name": "VYV ARQUITECTURA",
+            "address": "Cto Arquitectos 11, CD Satélite",
+            "phone": "525552364186",
+            "website": "https://vyvarquitectura.com.mx/home-para-redes/",
+            "image": "https://scontent.fmex31-1.fna.fbcdn.net/v/t39.30808-1/300084435_467995935339025_5144941616599048307_n.png?stp=dst-png_p320x320&_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=VOSJVduHAqwAX-o1C87&_nc_ht=scontent.fmex31-1.fna&edm=AOf6bZoEAAAA&oh=00_AfAh_Szpx-30hpG3NqTvXXTCbrpunS9gDB9EnJkV4C9aRg&oe=65585200",
+            "membershipLevel": "Silver",
+            "otherInfo": "At VyV Arquitectura S.A de C.V we are specialists in planning, design and construction of corporate spaces, we design efficient spaces"
+        },
+        {
+            "name": "ATRACCIÓN DE TALENTO AARCO SATÉLITE",
+            "address": "Circuito Novelistas 129 Naucalpan",
+            "phone": "525510839180",
+            "website": "https://www.aarco.com.mx/",
+            "image": "https://scontent.fmex23-1.fna.fbcdn.net/v/t39.30808-1/308116224_417899593783421_2545696372092032701_n.jpg?stp=c132.79.682.682a_dst-jpg_s320x320&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=4pTK9hElw4IAX_gSG-k&_nc_oc=AQkyXn511DNX4Mfd_gbDHC07fvuB6cR8Z7s91_kr0_Dq3lVC0iwp6sFHFzEmv6nV6k6u6_attCC_c0PpztOaX9We&_nc_ht=scontent.fmex23-1.fna&edm=AOf6bZoEAAAA&oh=00_AfAmS4vQjMKkK1cgUNkOCZVTvMdbALx-nHyGCvzaUtzlvg&oe=6558BA56",
+            "membershipLevel": "Silver",
+            "otherInfo": "We are one of the 5 best AARCO offices, we are distinguished by the service and support of consolidated agents"
+        }
+    ]
+}
