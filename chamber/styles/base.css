@@ -233,7 +233,7 @@ navigation a:active {
     }
 }
 
-/*discover css
+/*discover css*/
 
 
 /* CSS for the grid layout */
@@ -249,7 +249,7 @@ h1 {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    Sidebar and Gallery gap: 20px;
+    /*Sidebar and Gallery gap: 20px;*/
     padding: 20px;
 }
 
