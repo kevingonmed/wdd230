@@ -66,11 +66,18 @@
 
         <section class="weather-card" id="weather">
             <h2>Weather</h2>
-            <p>Current temperature: <span id="temperature">XX</span> °F</p>
-            <p>Wind speed: <span id="windspeed">XX</span> mph</p>
-            <p>Wind Chill: <span id="windchill">Calculating...</span> °F</p>
+            <p>Current temperature: <span id="temperature">XX</span></p>
+            <p>Current weather: <span id="weather-description">[Weather Description]</span></p>
+            <div id="forecast">
+                <h3>3-Day Forecast:</h3>
+                <Ul id="forecast-list"></Ul>
+            </div>
         </section>
-
+        <!-- Banner for meet and greet -->
+        <section class="banner" id="banner">
+            <p>Attend the chamber of commerce meet and greet on Wednesday at 7:00 p.m.</p>
+            <button onclick="hideBanner()">Close</button>
+        </section>
 
         <section class="company-spotlights" id="spotlights">
             <!-- Placeholder for company spotlights -->
@@ -107,6 +114,8 @@
     </footer>
     <script src="script/chamber.js"></script>
     <script src="script/windchill.js"></script>
+    <script src="script/weather.js"></script>
+    <script src="script/forecast.js"></script>
 
 </body>
 
