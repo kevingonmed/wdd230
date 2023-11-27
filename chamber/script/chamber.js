@@ -13,7 +13,7 @@ hambutton.addEventListener('click', () => {
 const lastModified = document.lastModified;
 document.getElementById("lastModified").textContent = lastModified;
 
-const apiKey = 'YOUR_API_KEY'; // Replace with your OpenWeatherMap API key
+const apiKey = 'bb7c859fce80defacd12b35789a3be52'; // Replace with your OpenWeatherMap API key
 const weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?q=CITY_NAME&appid=' + apiKey;
 
 // Get the weather data
