@@ -14,7 +14,9 @@ const lastModified = document.lastModified;
 document.getElementById("lastModified").textContent = lastModified;
 
 const apiKey = 'bb7c859fce80defacd12b35789a3be52'; // Replace with your OpenWeatherMap API key
-const weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?q=CITY_NAME&appid=' + apiKey;
+const latitude = 19.4994;
+const longitude = -99.2371;
+const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${apiKey}`;
 
 // Get the weather data
 fetch(weatherUrl)
