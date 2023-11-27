@@ -1,9 +1,6 @@
-//menu
-// Store the selected elements that we are going to use. 
-const mainnav = document.querySelector('.navigation')
+const mainnav = document.querySelector('.navigation');
 const hambutton = document.querySelector('#menu');
 
-// Add a click event listender to the hamburger button and use a callback function that toggles the list element's list of classes.
 hambutton.addEventListener('click', () => {
     mainnav.classList.toggle('show');
     hambutton.classList.toggle('show');
@@ -16,9 +13,9 @@ document.getElementById("lastModified").textContent = lastModified;
 const apiKey = 'bb7c859fce80defacd12b35789a3be52'; // Replace with your OpenWeatherMap API key
 const latitude = 19.4994;
 const longitude = -99.2371;
-const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${apiKey}`;
+const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${apiKey}`;
 
-// Get the weather data
+// Fetch weather data and update the UI
 fetch(weatherUrl)
     .then((response) => response.json())
     .then((data) => {
@@ -26,7 +23,6 @@ fetch(weatherUrl)
         const temperature = (data.main.temp - 273.15).toFixed(2); // Convert to Celsius
         const humidity = data.main.humidity;
 
-        // Display the weather data
         const weatherInfo = `Weather: ${weatherDescription}<br>Temperature: ${temperature}°C<br>Humidity: ${humidity}%`;
         document.querySelector('.weather-card h2').textContent = 'Current Weather';
         document.querySelector('.weather-card p').innerHTML = weatherInfo;
@@ -35,13 +31,15 @@ fetch(weatherUrl)
         console.error('Error fetching weather data:', error);
     });
 
-
 const modeButton = document.querySelector("#mode");
 const main = document.querySelector("main");
 
 modeButton.addEventListener("click", () => {
-    if (modeButton.textContent.includes("🕶️")) {
-        main.style.background = "#274c77";
+    const body = document.body;
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        main.style.background = "#000000";
         main.style.color = "#fff";
         modeButton.textContent = "🔆";
     } else {
@@ -51,7 +49,6 @@ modeButton.addEventListener("click", () => {
     }
 });
 
-//discover
 document.addEventListener('DOMContentLoaded', () => {
     const message = document.querySelector('.message');
     const numVisits = Number(localStorage.getItem("numVisits-ls")) || 0;
@@ -72,9 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Update the last visit timestamp
     localStorage.setItem("lastVisit-ls", currentTimestamp);
-
-    // Increment the number of visits
     localStorage.setItem("numVisits-ls", numVisits + 1);
 });
