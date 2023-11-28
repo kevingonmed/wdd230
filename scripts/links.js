@@ -37,3 +37,34 @@ function displayLinks(weeks) {
         linksContainer.appendChild(listItem);
     });
 }
+
+function displayLinks(weeks) {
+    const linksContainer = document.getElementById("activity-links"); // Adjust the ID as needed
+
+    weeks.lessons.forEach((week) => {
+        const lessonNumber = week.lesson;
+        const links = week.links;
+
+        const lessonSection = document.createElement("section");
+        lessonSection.classList.add('lesson-section');
+
+        const lessonHeader = document.createElement("h4");
+        lessonHeader.textContent = `Lesson ${lessonNumber}`;
+        lessonSection.appendChild(lessonHeader);
+
+        const activitiesList = document.createElement("ul");
+
+        links.forEach((link) => {
+            const listItem = document.createElement("li");
+            const anchor = document.createElement("a");
+            anchor.href = link.url;
+            anchor.textContent = link.title; // Display only the activity name
+            listItem.appendChild(anchor);
+            activitiesList.appendChild(listItem);
+        });
+
+        lessonSection.appendChild(activitiesList);
+        linksContainer.appendChild(lessonSection);
+    });
+}
+
