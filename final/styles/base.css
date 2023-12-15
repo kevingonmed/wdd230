@@ -1,0 +1,346 @@
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: 3px 7px 6px;
+    background-color: #eee;
+    color: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #64b8b1;
+    color: #fff;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation li a:hover {
+    background-color: #256940;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+}
+
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    iframe {
+        height: 300px;
+        /* Adjust the height for even smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    iframe {
+        height: 200px;
+    }
+}
+
+body {
+    background-color: #e9d59c
+}
+
+.image-section {
+    position: relative;
+    text-align: center;
+}
+
+/* Style for the image */
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    width: 68%;
+}
+
+/* Style for the call-to-action */
+.call-to-action {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+}
+
+/* Style for the call-to-action button */
+.call-to-action .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.call-to-action .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the rental summary section */
+.rental-summary {
+
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style for each rental category */
+.rental-category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* Adjust column width */
+    gap: 15%;
+    /* Adjust gap between grid items */
+}
+
+/* Style for each rental category */
+.rental-category {
+    background-color: #64b8b1;
+    color: #fff;
+    padding: 15px;
+    border: 1px solid #bcbcbc;
+    border-radius: 5px;
+}
+
+/* Style for rental services/agreements */
+.rental-services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    /* Set a height to the container */
+}
+
+.rental-services {
+    color: #fff;
+    background-color: #186690;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.weather-info {
+    background-color: #64b8b1;
+    /* Different color than background */
+    border-radius: 10px;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+footer {
+    background-color: #186690;
+    color: #fff;
+    text-align: center
+}
+
+/*table of the rentals page*/
+/* Apply styles to the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #256940;
+    color: #fff;
+}
+
+/* Apply styles to table headers */
+th {
+    background-color: #186690;
+    padding: 8px;
+    text-align: left;
+    color: #fff;
+}
+
+/* Apply styles to table cells */
+td {
+    border: 1px solid #fff;
+    padding: 8px;
+}
+
+/* Apply alternate row background color */
+tr:nth-child(even) {
+    background-color: #64b8b1;
+}
+
+/* Apply hover effect to rows */
+tr:hover {
+    background-color: #e9d59c;
+    color: #000;
+}
+
+/* Grid layout for the reservation form */
+.reservation-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Grid layout for form elements */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/* Style for labels */
+label {
+    font-weight: bold;
+}
+
+/* Style for input/select fields */
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for submit button */
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/*Contact*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-info h2 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contact-info h3 {
+    text-align: center;
+}
+
+/* Contact info styles */
+.contact-info {
+    margin-bottom: 40px;
+}
+
+/* Google map styles */
+.google-map {
+    margin-bottom: 20px;
+}
+
+.google-map iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+/* Contact form styles */
+.contact-form {
+    display: grid;
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.contact-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}

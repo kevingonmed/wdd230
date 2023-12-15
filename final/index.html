@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kevin Gonzalez">
+    <meta name="description" content="Scooter Rental Company">
+    <meta property="og:title" content="Scoots">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://i0.wp.com/veras.mx/wp-content/uploads/2023/06/471fd441-54e8-4c65-bf21-7c836c3a0495.jpg">
+    <meta property="og:url" content="https://kevingonmed.github.io/wdd230/">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Kevin Gonzalez - WDD 230 - Final Project Scoots website </title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rentals</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="image-section">
+            <img src="images/main.webp" alt="Main Image">
+            <div class="call-to-action">
+                <h2>Rent Your Adventure Today!</h2>
+                <a href="reservations.html" class="btn">Make a Reservation</a>
+            </div>
+        </section>
+        <div class="contact-info">
+            <!-- Contact information -->
+        </div>
+        <section class="rental-summary">
+            <h2>Rental Summary</h2>
+            <div class="rental-category-grid">
+                <div class="rental-category">
+                    <h3>Honda Motor Scooters</h3>
+                    <ul>
+                        <li>Honda Metropolitan (49cc) - 1 person</li>
+                        <li>Honda Dio (110cc) - 2 person</li>
+                        <li>Honda PCX150 (149cc) - 2 person</li>
+                    </ul>
+                </div>
+
+                <div class="rental-category">
+                    <h3>Side-by-Side ATVs</h3>
+                    <ul>
+                        <li>Honda Pioneer 1000 - 4 person</li>
+                    </ul>
+                </div>
+
+                <div class="rental-category">
+                    <h3>Jeeps</h3>
+                    <ul>
+                        <li>Jeep Wrangler - 4 door manual with A/C - 5 person</li>
+                        <li>Jeep Wrangler - 2 door - open air - manual - 4 person</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Rental Services and Agreements -->
+            <div class="rental-services-container">
+                <div class="rental-services">
+                    <h3>Rental Services and Agreements</h3>
+                    <ul>
+                        <li>A $50 security deposit is required to confirm reservations.</li>
+                        <li>A valid driver's license is required in hand at the time of rental.</li>
+                        <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                        <li>Fuel charge is not included.</li>
+                        <li>Unlimited mileage.</li>
+                        <li>Liability insurance is included.</li>
+                        <li>Damage insurance is available for purchase.</li>
+                        <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                        <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+                        <li>Rentals may be returned to either physical location.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="weather-info">
+            <h2>Weather Information</h2>
+            <div class="weather-details">
+                <!-- Weather details will be displayed here -->
+            </div>
+            <div class="closeable-message">
+                <!-- Closeable message for high temperature -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear">YYYY</span> Kevin Gonzalez Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>

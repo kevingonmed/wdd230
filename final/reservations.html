@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kevin Gonzalez">
+    <meta name="description" content="Scooter Rental Company">
+    <meta property="og:title" content="Scoots">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://i0.wp.com/veras.mx/wp-content/uploads/2023/06/471fd441-54e8-4c65-bf21-7c836c3a0495.jpg">
+    <meta property="og:url" content="https://kevingonmed.github.io/wdd230/">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Kevin Gonzalez - WDD 230 - Final Project Scoots website </title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rentals</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="reservation-form">
+            <h2>Rental Agreement Information</h2>
+            <!-- Rental agreement information goes here -->
+
+            <form>
+                <h2>Reservation Details</h2>
+                <div class="form-grid">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date">
+
+                    <label for="period">Period:</label>
+                    <select id="period" name="period">
+                        <option value="half_day">Half Day</option>
+                        <option value="full_day">Full Day</option>
+                    </select>
+
+                    <!-- Other form fields... -->
+
+                    <label for="comments">Special Accommodations/Comments:</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                </div>
+
+                <input type="submit" value="Submit Reservation">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear">YYYY</span> Kevin Gonzalez Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>

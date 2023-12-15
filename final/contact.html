@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kevin Gonzalez">
+    <meta name="description" content="Scooter Rental Company">
+    <meta property="og:title" content="Scoots">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://i0.wp.com/veras.mx/wp-content/uploads/2023/06/471fd441-54e8-4c65-bf21-7c836c3a0495.jpg">
+    <meta property="og:url" content="https://kevingonmed.github.io/wdd230/">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Kevin Gonzalez - WDD 230 - Final Project Scoots website </title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rentals</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-info">
+            <h2>Locations</h2>
+            <div class="google-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30121.43261552267!2d-86.9483618623234!3d20.493873270725516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1ses-419!2smx!4v1702593408898!5m2!1ses-419!2smx"
+                    width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <h2>Essential Contact Information</h2>
+            <!-- Essential contact information goes here -->
+            <h3>Scoots</h3>
+            <h3>email: scoots@gmail.com</h3>
+            <h3>Phone: 2871478963</h3>
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" rows="4"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear">YYYY</span> Kevin Gonzalez Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
