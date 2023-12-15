@@ -27,7 +27,7 @@ nav a {
 }
 
 #menu::before {
-    content: "☰";
+    content: "🌴";
 }
 
 #menu.open::before {
@@ -233,6 +233,10 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #e9d59c;
     color: #000;
+}
+
+.reservation-form h2 {
+    text-align: center;
 }
 
 /* Grid layout for the reservation form */
