@@ -35,8 +35,25 @@
             <h2>Rental Agreement Information</h2>
             <!-- Rental agreement information goes here -->
 
-            <form>
+            <form id="reservationForm">
                 <h2>Reservation Details</h2>
+                <div class="form-section">
+                    <!-- Name input -->
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+
+                    <!-- Cruise arrival question -->
+                    <label for="cruiseArrival">Arrived on a Cruise?</label>
+                    <select id="cruiseArrival" name="cruiseArrival">
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                    </select>
+
+                    <!-- Cruise ship name (hidden by default) -->
+                    <label for="cruiseShipName" id="cruiseShipLabel" style="display: none;">Cruise Ship Name:</label>
+                    <input type="text" id="cruiseShipName" name="cruiseShipName" style="display: none;">
+                </div>
+
                 <div class="form-grid">
                     <label for="date">Date:</label>
                     <input type="date" id="date" name="date">
@@ -46,9 +63,6 @@
                         <option value="half_day">Half Day</option>
                         <option value="full_day">Full Day</option>
                     </select>
-
-                    <!-- Other form fields... -->
-
                     <label for="comments">Special Accommodations/Comments:</label>
                     <textarea id="comments" name="comments" rows="4"></textarea>
                 </div>
@@ -56,10 +70,12 @@
                 <input type="submit" value="Submit Reservation">
             </form>
         </div>
-    </main>
-    <footer>
-        <p>&copy; <span id="currentYear">YYYY</span> Kevin Gonzalez Mexico</p>
-        <p id="lastModified"></p>
-    </footer>
-    <script src="scripts/main.js"></script>
+        <div id="successMessage" style="display: none;">Reservation submitted successfully!</div>
+
+        <footer>
+            <p>&copy; <span id="currentYear">YYYY</span> Kevin Gonzalez Mexico</p>
+            <p id="lastModified"></p>
+        </footer>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/reserv.js"></script>
 </body>
